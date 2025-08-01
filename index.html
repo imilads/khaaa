@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مسیریابی</title>
+  <style>
+    body {
+      font-family: Vazir, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* فاصله بین دکمه‌ها */
+    }
+
+    .orange-button {
+      background-color: #ff6f00;
+      color: white;
+      padding: 18px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: background-color 0.3s;
+    }
+
+    .orange-button:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>مسیریابی به مقصد</h2>
+
+  <div class="button-container">
+    <a href="nshn://directions?origin=current&destination=36.513624,52.565142" class="orange-button">
+      باز کردن در نشان
+    </a>
+
+    <a href="https://maps.google.com/?q=36.513624,52.565142" class="orange-button">
+      باز کردن در گوگل مپ
+    </a>
+  </div>
+
+</body>
+</html>
